@@ -1,0 +1,6 @@
+;$Id: drupal_tweak.info
+name = drupal_tweak
+description = A custom module for drupal7
+package = Jieyyal
+version = "7.x"
+core = 7.x

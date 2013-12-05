@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * hook_menu
+ */
+function drupal_tweak_menu() {
+  
+  
+}
+/**
+ * hook_init
+ */
+function drupal_tweak_init() {
+	//drupal_set_head('<meta property="qc:admins" content="14546563751114636" />');
+	$data = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+       'property' => 'qc:admins',
+       'content' => '14546563751114636',
+    ),
+  );
+  drupal_add_html_head($data, '');
+} 
